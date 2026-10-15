@@ -65,7 +65,6 @@
                 </div>
             </a>
             
-            <!-- Desktop Menu -->
             <nav class="hidden lg:flex items-center space-x-3 xl:space-x-5 text-sm font-medium">
                 <a href="#about" class="bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 px-3 py-1.5 rounded-lg text-slate-300 hover:text-emerald-400 transition-colors">О кандидате</a>
                 <a href="#campaign" class="bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 px-3 py-1.5 rounded-lg text-slate-300 hover:text-emerald-400 transition-colors">Кандидаты</a>
@@ -83,13 +82,11 @@
                 </a>
             </div>
 
-            <!-- Mobile Menu Button -->
             <button id="menu-btn" class="lg:hidden text-slate-300 hover:text-white focus:outline-none p-2 transition-transform duration-200">
                 <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
             </button>
         </div>
 
-        <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="lg:hidden bg-slate-900 border-b border-slate-800 px-6 pt-2 pb-6 space-y-2.5 shadow-2xl">
             <a href="#about" class="flex items-center space-x-3 py-2 px-3.5 bg-slate-950/60 border border-slate-800/90 rounded-xl text-slate-200 hover:text-emerald-400 transition-colors group">
                 <span class="w-8 h-8 rounded-lg bg-emerald-950/80 border border-emerald-800/60 text-emerald-400 flex items-center justify-center text-xs flex-shrink-0"><i class="fa-solid fa-user"></i></span>
@@ -221,7 +218,7 @@
             </div>
         </section>
 
-        <!-- Candidates Carousel Section (5 Candidates) -->
+        <!-- Candidates Carousel Section -->
         <section id="campaign" class="py-16 bg-slate-950">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto space-y-3 mb-10">
@@ -229,10 +226,8 @@
                     <p class="text-slate-400 text-sm sm:text-lg">Прокрутите список и выберите кандидата для просмотра программы:</p>
                 </div>
 
-                <!-- Horizontal Carousel Container -->
                 <div class="candidates-scroll flex overflow-x-auto space-x-4 pb-6 mb-10 pt-4 px-2 scroll-smooth snap-x">
                     
-                    <!-- Candidate 1 (Matvey - Main) -->
                     <div onclick="selectCandidate('matvey')" id="card-matvey" class="candidate-card cursor-pointer bg-gradient-to-b from-emerald-950/60 to-slate-900 border-2 border-emerald-500 rounded-3xl p-6 text-center transition-all shadow-xl shadow-emerald-500/10 flex-shrink-0 w-64 snap-center relative group pt-8">
                         <div class="absolute top-2 left-1/2 -translate-x-1/2 bg-emerald-500 text-slate-950 text-[10px] font-extrabold uppercase px-3 py-1 rounded-full shadow whitespace-nowrap z-10">
                             Основной кандидат
@@ -245,7 +240,6 @@
                         <span class="inline-block text-xs bg-emerald-500 text-slate-950 font-bold px-3 py-1 rounded-full">Голосов: <span id="count-matvey">0</span></span>
                     </div>
 
-                    <!-- Candidate 2 (Okuneva) -->
                     <div onclick="selectCandidate('okuneva')" id="card-okuneva" class="candidate-card cursor-pointer bg-slate-900/60 border border-slate-800 rounded-3xl p-6 text-center transition-all hover:border-slate-600 flex-shrink-0 w-64 snap-center group">
                         <div class="w-36 h-36 mx-auto rounded-2xl overflow-hidden border-2 border-slate-700 mb-4 bg-slate-950 relative">
                             <img src="okuneva.jpg" data-basename="okuneva" alt="" class="candidate-photo w-full h-full object-cover group-hover:scale-105 transition-transform">
@@ -255,7 +249,6 @@
                         <span class="inline-block text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full">Голосов: <span id="count-okuneva">0</span></span>
                     </div>
 
-                    <!-- Candidate 3 (Lesova) -->
                     <div onclick="selectCandidate('lesova')" id="card-lesova" class="candidate-card cursor-pointer bg-slate-900/60 border border-slate-800 rounded-3xl p-6 text-center transition-all hover:border-slate-600 flex-shrink-0 w-64 snap-center group">
                         <div class="w-36 h-36 mx-auto rounded-2xl overflow-hidden border-2 border-slate-700 mb-4 bg-slate-950 relative">
                             <img src="lesova.jpg" data-basename="lesova" alt="" class="candidate-photo w-full h-full object-cover group-hover:scale-105 transition-transform">
@@ -265,7 +258,6 @@
                         <span class="inline-block text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full">Голосов: <span id="count-lesova">0</span></span>
                     </div>
 
-                    <!-- Candidate 4 (Balabanyan) -->
                     <div onclick="selectCandidate('balabanyan')" id="card-balabanyan" class="candidate-card cursor-pointer bg-slate-900/60 border border-slate-800 rounded-3xl p-6 text-center transition-all hover:border-slate-600 flex-shrink-0 w-64 snap-center group">
                         <div class="w-36 h-36 mx-auto rounded-2xl overflow-hidden border-2 border-slate-700 mb-4 bg-slate-950 relative">
                             <img src="balabanyan.jpg" data-basename="balabanyan" alt="" class="candidate-photo w-full h-full object-cover group-hover:scale-105 transition-transform">
@@ -275,7 +267,6 @@
                         <span class="inline-block text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full">Голосов: <span id="count-balabanyan">0</span></span>
                     </div>
 
-                    <!-- Candidate 5 (Tonoyan) -->
                     <div onclick="selectCandidate('tonoyan')" id="card-tonoyan" class="candidate-card cursor-pointer bg-slate-900/60 border border-slate-800 rounded-3xl p-6 text-center transition-all hover:border-slate-600 flex-shrink-0 w-64 snap-center group">
                         <div class="w-36 h-36 mx-auto rounded-2xl overflow-hidden border-2 border-slate-700 mb-4 bg-slate-950 relative">
                             <img src="tonoyan.jpg" data-basename="tonoyan" alt="" class="candidate-photo w-full h-full object-cover group-hover:scale-105 transition-transform">
@@ -287,7 +278,6 @@
 
                 </div>
 
-                <!-- Campaign Program Container -->
                 <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl transition-all">
                     <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 mb-6 border-b border-slate-800 gap-4">
                         <div>
@@ -299,7 +289,6 @@
                         </div>
                     </div>
 
-                    <!-- Minimalist Site-Styled Video Player -->
                     <div id="matvey-video-container" class="mb-8 w-full max-w-xl mx-auto">
                         <div class="flex items-center justify-between mb-3 px-1">
                             <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest flex items-center space-x-2">
@@ -324,12 +313,8 @@
                         </div>
                     </div>
 
-                    <!-- 4 Clickable Points Grid -->
-                    <div id="program-points-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-                        <!-- Filled via JavaScript -->
-                    </div>
+                    <div id="program-points-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6"></div>
 
-                    <!-- Detailed Explanation Box -->
                     <div class="bg-slate-950 border border-emerald-900/60 rounded-2xl p-5 sm:p-6 shadow-inner mb-8">
                         <div class="flex items-center space-x-3 mb-2">
                             <span id="detail-icon" class="text-base text-emerald-400 flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-950 border border-emerald-800"><i class="fa-solid fa-plug text-xs"></i></span>
@@ -340,7 +325,6 @@
                         </p>
                     </div>
 
-                    <!-- Voting Box for Selected Candidate -->
                     <div id="vote" class="bg-slate-950 border border-emerald-900/50 rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden">
                         <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
 
@@ -410,7 +394,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Card 1 -->
                     <div class="bg-slate-900/80 border border-emerald-500/40 rounded-3xl p-6 shadow-xl relative overflow-hidden flex flex-col justify-between">
                         <div class="absolute top-0 right-0 bg-emerald-500 text-slate-950 text-[10px] font-extrabold px-3 py-1 rounded-bl-xl uppercase">Выбор №1</div>
                         <div>
@@ -420,7 +403,7 @@
                             <h3 class="text-lg font-bold text-white mb-2">Романович Матвей</h3>
                             <p class="text-emerald-400 font-semibold text-xs mb-4">Конкретная польза для каждого ученика ежедневно</p>
                             <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
-                                Предлагает осязаемые улучшения инфраструктуры: розетки для гаджетов, стабильный Wi-Fi, зеркала и мягкие пуфики. Это то, чем ученики пользуются каждый день, а не пустые слова. Плюс — гарантированные призы за участие в голосовании.
+                                Предлагает осязаемые улучшения инфраструктуры: розетки для гаджетов, стабильный Wi-Fi, зеркала и мягкие пуфики.
                             </p>
                         </div>
                         <div class="bg-emerald-950/60 border border-emerald-800/60 rounded-xl p-3 text-xs text-emerald-300 font-medium">
@@ -428,7 +411,6 @@
                         </div>
                     </div>
 
-                    <!-- Card 2 -->
                     <div class="bg-slate-900/40 border border-slate-800 rounded-3xl p-6 shadow-lg flex flex-col justify-between">
                         <div>
                             <div class="w-10 h-10 rounded-xl bg-slate-950 border border-slate-800 text-rose-400 flex items-center justify-center text-lg mb-4">
@@ -437,7 +419,7 @@
                             <h3 class="text-lg font-bold text-white mb-2">Окунева Карина</h3>
                             <p class="text-rose-400 font-semibold text-xs mb-4">Минус: Развлекательный уклон без базы</p>
                             <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                                В программе упор делается на «школьные дискотеки» и общие фразы про «исполнение желаний». Дискотеки — это весело, но они не решают повседневных бытовых проблем учеников в школе и не улучшают условия обучения.
+                                В программе упор делается на «школьные дискотеки» и общие фразы про «исполнение желаний».
                             </p>
                         </div>
                         <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-xs text-slate-400">
@@ -445,7 +427,6 @@
                         </div>
                     </div>
 
-                    <!-- Card 3 -->
                     <div class="bg-slate-900/40 border border-slate-800 rounded-3xl p-6 shadow-lg flex flex-col justify-between">
                         <div>
                             <div class="w-10 h-10 rounded-xl bg-slate-950 border border-slate-800 text-rose-400 flex items-center justify-center text-lg mb-4">
@@ -454,7 +435,7 @@
                             <h3 class="text-lg font-bold text-white mb-2">Лесова Виктория</h3>
                             <p class="text-rose-400 font-semibold text-xs mb-4">Минус: Размытые формулировки</p>
                             <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                                Пункты вроде «больше мероприятий» и «улучшение инфраструктуры» звучат хорошо, но не детализированы. Непонятно, какие именно изменения планируются и как они будут воплощаться в жизнь.
+                                Пункты вроде «больше мероприятий» и «улучшение инфраструктуры» не детализированы.
                             </p>
                         </div>
                         <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-xs text-slate-400">
@@ -462,7 +443,6 @@
                         </div>
                     </div>
 
-                    <!-- Card 4 -->
                     <div class="bg-slate-900/40 border border-slate-800 rounded-3xl p-6 shadow-lg flex flex-col justify-between">
                         <div>
                             <div class="w-10 h-10 rounded-xl bg-slate-950 border border-slate-800 text-rose-400 flex items-center justify-center text-lg mb-4">
@@ -471,7 +451,7 @@
                             <h3 class="text-lg font-bold text-white mb-2">Балабанян Эмилия</h3>
                             <p class="text-rose-400 font-semibold text-xs mb-4">Минус: Частичное совпадение идей</p>
                             <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                                Идеи с зеркалами и комфортом в санузлах правильные, но программа перегружена специфическими пунктами, в то время как Матвей охватывает комфорт абсолютно для всех параллелей.
+                                Программа перегружена специфическими пунктами, в то время как Матвей охватывает комфорт для всех.
                             </p>
                         </div>
                         <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-xs text-slate-400">
@@ -479,7 +459,6 @@
                         </div>
                     </div>
 
-                    <!-- Card 5 -->
                     <div class="bg-slate-900/40 border border-slate-800 rounded-3xl p-6 shadow-lg flex flex-col justify-between md:col-span-2 lg:col-span-2">
                         <div>
                             <div class="w-10 h-10 rounded-xl bg-slate-950 border border-slate-800 text-rose-400 flex items-center justify-center text-lg mb-4">
@@ -488,7 +467,7 @@
                             <h3 class="text-lg font-bold text-white mb-2">Тоноян Давид</h3>
                             <p class="text-rose-400 font-semibold text-xs mb-4">Минус: Сложность реализации «Свободной школы»</p>
                             <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                                Пункт про «день свободной школы» с самостоятельным выбором занятий звучит привлекательно, но на практике труднореализуем из-за жестких образовательных стандартов. Программа Матвея полностью реалистична.
+                                Пункт про «день свободной школы» труднореализуем из-за жестких образовательных стандартов.
                             </p>
                         </div>
                         <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-xs text-slate-400">
@@ -499,7 +478,7 @@
             </div>
         </section>
 
-        <!-- Dynamic Visual Results Section -->
+        <!-- Results Section -->
         <section id="results" class="py-16 bg-slate-950 border-t border-slate-900">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
@@ -515,9 +494,7 @@
                         </div>
                     </div>
 
-                    <div id="results-bars-container" class="space-y-4">
-                        <!-- Filled via JS -->
-                    </div>
+                    <div id="results-bars-container" class="space-y-4"></div>
 
                     <div id="no-votes-notice" class="py-12 text-center text-slate-500 text-sm hidden">
                         Пока нет зарегистрированных голосов за этого кандидата.
@@ -541,24 +518,14 @@
                             <i id="faq-icon-1" class="fa-solid fa-chevron-down text-emerald-400 text-xs transition-transform duration-300"></i>
                         </button>
                         <div id="faq-content-1" class="hidden px-5 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800/50 pt-4">
-                            <p class="mb-2"><strong>Нет, это не официальный сайт администрации школы.</strong> Данный портал является независимым интерактивным ресурсом.</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden transition-all">
-                        <button onclick="toggleFaq(2)" class="w-full flex items-center justify-between p-4 text-left focus:outline-none">
-                            <span class="font-bold text-white text-xs sm:text-sm">Как принять участие в розыгрыше призов?</span>
-                            <i id="faq-icon-2" class="fa-solid fa-chevron-down text-emerald-400 text-xs transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-content-2" class="hidden px-5 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800/50 pt-4">
-                            <p class="mb-2"><strong>Участие в розыгрыше призов происходит автоматически</strong> при успешной фиксации вашего голоса.</p>
+                            <p><strong>Нет, это не официальный сайт администрации школы.</strong> Данный портал является независимым интерактивным ресурсом.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Footer Section -->
+        <!-- Footer -->
         <footer id="contacts" class="bg-slate-950 border-t border-slate-900 pt-16 pb-12">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
@@ -574,7 +541,7 @@
         </footer>
     </main>
 
-    <!-- СКРЫТАЯ АДМИН-ПАНЕЛЬ -->
+    <!-- Admin Modal -->
     <div id="admin-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm hidden p-4">
         <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 max-w-2xl w-full shadow-2xl relative max-h-[90vh] overflow-y-auto">
             <button onclick="closeAdminModal()" class="absolute top-6 right-6 text-slate-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
@@ -647,7 +614,7 @@
         </div>
     </div>
 
-    <!-- Core App Logic Script -->
+    <!-- Script with SpaceWeb Media & API URLs -->
     <script>
         const programs = {
             matvey: {
@@ -672,8 +639,10 @@
         let adminCandidate = 'matvey';
         let globalVotesCache = [];
         const LOCAL_VOTE_KEY = 'school_election_has_voted';
-        // Указываем полный адрес вашего скрипта на SpaceWeb для работы с GitHub Pages:
-        const API_URL = 'https://xvanikigma.swtest.ru/api.php';
+
+        // АДРЕСА SPACEWEB (API и папка с картинками/видео)
+        const SPACEWEB_URL = 'http://vibor12.io.swtest.ru/'; 
+        const API_URL = SPACEWEB_URL + 'api.php';
 
         function selectCandidate(id) {
             selectedCandidate = id;
@@ -847,7 +816,7 @@
             })
             .catch(() => {
                 errorEl.textContent = 'Ошибка соединения с сервером.';
-                errorEl.classList.remove('hidden');
+                errorEl.classList.add('hidden');
             });
         }
 
@@ -1036,10 +1005,81 @@
 
         function closeStudentsBox() { document.getElementById('admin-students-box').classList.add('hidden'); }
 
-        document.addEventListener('DOMContentLoaded', () => {
+        // Автозагрузчик картинок и видео прямо с SpaceWeb
+        document.addEventListener("DOMContentLoaded", () => {
             selectCandidate('matvey');
             fetchVotesFromServer();
+
+            const imageExtensions = ['.jpg', '.jpeg', '.png', '.webp'];
+            function autoLoadImage(imgEl) {
+                const baseName = imgEl.getAttribute('data-basename');
+                if (!baseName) return;
+                let index = 0;
+                function tryNextExtension() {
+                    if (index >= imageExtensions.length) {
+                        imgEl.style.display = 'none';
+                        const parent = imgEl.parentElement;
+                        if (parent && !parent.querySelector('.photo-fallback')) {
+                            const fallback = document.createElement('div');
+                            fallback.className = 'photo-fallback w-full h-full flex items-center justify-center bg-slate-900 text-slate-600 text-3xl';
+                            fallback.innerHTML = '<i class="fa-solid fa-user"></i>';
+                            parent.appendChild(fallback);
+                        }
+                        return;
+                    }
+                    // Загружаем картинку со SpaceWeb
+                    const testSrc = SPACEWEB_URL + baseName + imageExtensions[index++];
+                    const tester = new Image();
+                    tester.src = testSrc;
+                    tester.onload = () => { 
+                        imgEl.src = testSrc; 
+                        imgEl.style.display = 'block';
+                    };
+                    tester.onerror = tryNextExtension;
+                }
+                tryNextExtension();
+            }
+            document.querySelectorAll('.candidate-photo, .qr-img').forEach(autoLoadImage);
+
+            const videoEl = document.getElementById('candidate-video');
+            const videoPlaceholder = document.getElementById('video-placeholder');
+            const videoExtensions = ['.mp4', '.webm', '.ogg', '.mov'];
+            let vIndex = 0;
+            function tryNextVideo() {
+                if (vIndex >= videoExtensions.length) return;
+                // Загружаем видео со SpaceWeb
+                const testSrc = SPACEWEB_URL + 'video' + videoExtensions[vIndex++];
+                const tester = document.createElement('video');
+                tester.src = testSrc;
+                tester.onloadeddata = () => {
+                    videoEl.src = testSrc;
+                    if (videoPlaceholder) videoPlaceholder.classList.add('hidden');
+                };
+                tester.onerror = tryNextVideo;
+            }
+            tryNextVideo();
         });
+    </script>
+    
+    <!-- Mobile Navigation Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.toggle('open');
+                menuIcon.className = isOpen ? 'fa-solid fa-xmark text-2xl' : 'fa-solid fa-bars text-2xl';
+            });
+
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('open');
+                    menuIcon.className = 'fa-solid fa-bars text-2xl';
+                });
+            });
+        }
     </script>
 </body>
 </html>
