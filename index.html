@@ -65,6 +65,7 @@
                 </div>
             </a>
             
+            <!-- Desktop Menu -->
             <nav class="hidden lg:flex items-center space-x-3 xl:space-x-5 text-sm font-medium">
                 <a href="#about" class="bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 px-3 py-1.5 rounded-lg text-slate-300 hover:text-emerald-400 transition-colors">О кандидате</a>
                 <a href="#campaign" class="bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 px-3 py-1.5 rounded-lg text-slate-300 hover:text-emerald-400 transition-colors">Кандидаты</a>
@@ -82,11 +83,13 @@
                 </a>
             </div>
 
+            <!-- Mobile Menu Button -->
             <button id="menu-btn" class="lg:hidden text-slate-300 hover:text-white focus:outline-none p-2 transition-transform duration-200">
                 <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
             </button>
         </div>
 
+        <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="lg:hidden bg-slate-900 border-b border-slate-800 px-6 pt-2 pb-6 space-y-2.5 shadow-2xl">
             <a href="#about" class="flex items-center space-x-3 py-2 px-3.5 bg-slate-950/60 border border-slate-800/90 rounded-xl text-slate-200 hover:text-emerald-400 transition-colors group">
                 <span class="w-8 h-8 rounded-lg bg-emerald-950/80 border border-emerald-800/60 text-emerald-400 flex items-center justify-center text-xs flex-shrink-0"><i class="fa-solid fa-user"></i></span>
@@ -218,7 +221,7 @@
             </div>
         </section>
 
-        <!-- Candidates Carousel Section -->
+        <!-- Candidates Carousel Section (5 Candidates) -->
         <section id="campaign" class="py-16 bg-slate-950">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto space-y-3 mb-10">
@@ -226,8 +229,10 @@
                     <p class="text-slate-400 text-sm sm:text-lg">Прокрутите список и выберите кандидата для просмотра программы:</p>
                 </div>
 
+                <!-- Horizontal Carousel Container -->
                 <div class="candidates-scroll flex overflow-x-auto space-x-4 pb-6 mb-10 pt-4 px-2 scroll-smooth snap-x">
                     
+                    <!-- Candidate 1 (Matvey - Main) -->
                     <div onclick="selectCandidate('matvey')" id="card-matvey" class="candidate-card cursor-pointer bg-gradient-to-b from-emerald-950/60 to-slate-900 border-2 border-emerald-500 rounded-3xl p-6 text-center transition-all shadow-xl shadow-emerald-500/10 flex-shrink-0 w-64 snap-center relative group pt-8">
                         <div class="absolute top-2 left-1/2 -translate-x-1/2 bg-emerald-500 text-slate-950 text-[10px] font-extrabold uppercase px-3 py-1 rounded-full shadow whitespace-nowrap z-10">
                             Основной кандидат
@@ -240,6 +245,7 @@
                         <span class="inline-block text-xs bg-emerald-500 text-slate-950 font-bold px-3 py-1 rounded-full">Голосов: <span id="count-matvey">0</span></span>
                     </div>
 
+                    <!-- Candidate 2 (Okuneva) -->
                     <div onclick="selectCandidate('okuneva')" id="card-okuneva" class="candidate-card cursor-pointer bg-slate-900/60 border border-slate-800 rounded-3xl p-6 text-center transition-all hover:border-slate-600 flex-shrink-0 w-64 snap-center group">
                         <div class="w-36 h-36 mx-auto rounded-2xl overflow-hidden border-2 border-slate-700 mb-4 bg-slate-950 relative">
                             <img src="okuneva.jpg" data-basename="okuneva" alt="" class="candidate-photo w-full h-full object-cover group-hover:scale-105 transition-transform">
@@ -249,6 +255,7 @@
                         <span class="inline-block text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full">Голосов: <span id="count-okuneva">0</span></span>
                     </div>
 
+                    <!-- Candidate 3 (Lesova) -->
                     <div onclick="selectCandidate('lesova')" id="card-lesova" class="candidate-card cursor-pointer bg-slate-900/60 border border-slate-800 rounded-3xl p-6 text-center transition-all hover:border-slate-600 flex-shrink-0 w-64 snap-center group">
                         <div class="w-36 h-36 mx-auto rounded-2xl overflow-hidden border-2 border-slate-700 mb-4 bg-slate-950 relative">
                             <img src="lesova.jpg" data-basename="lesova" alt="" class="candidate-photo w-full h-full object-cover group-hover:scale-105 transition-transform">
@@ -258,6 +265,7 @@
                         <span class="inline-block text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full">Голосов: <span id="count-lesova">0</span></span>
                     </div>
 
+                    <!-- Candidate 4 (Balabanyan) -->
                     <div onclick="selectCandidate('balabanyan')" id="card-balabanyan" class="candidate-card cursor-pointer bg-slate-900/60 border border-slate-800 rounded-3xl p-6 text-center transition-all hover:border-slate-600 flex-shrink-0 w-64 snap-center group">
                         <div class="w-36 h-36 mx-auto rounded-2xl overflow-hidden border-2 border-slate-700 mb-4 bg-slate-950 relative">
                             <img src="balabanyan.jpg" data-basename="balabanyan" alt="" class="candidate-photo w-full h-full object-cover group-hover:scale-105 transition-transform">
@@ -267,6 +275,7 @@
                         <span class="inline-block text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full">Голосов: <span id="count-balabanyan">0</span></span>
                     </div>
 
+                    <!-- Candidate 5 (Tonoyan) -->
                     <div onclick="selectCandidate('tonoyan')" id="card-tonoyan" class="candidate-card cursor-pointer bg-slate-900/60 border border-slate-800 rounded-3xl p-6 text-center transition-all hover:border-slate-600 flex-shrink-0 w-64 snap-center group">
                         <div class="w-36 h-36 mx-auto rounded-2xl overflow-hidden border-2 border-slate-700 mb-4 bg-slate-950 relative">
                             <img src="tonoyan.jpg" data-basename="tonoyan" alt="" class="candidate-photo w-full h-full object-cover group-hover:scale-105 transition-transform">
@@ -278,6 +287,7 @@
 
                 </div>
 
+                <!-- Campaign Program Container -->
                 <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl transition-all">
                     <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 mb-6 border-b border-slate-800 gap-4">
                         <div>
@@ -289,6 +299,7 @@
                         </div>
                     </div>
 
+                    <!-- Minimalist Site-Styled Video Player -->
                     <div id="matvey-video-container" class="mb-8 w-full max-w-xl mx-auto">
                         <div class="flex items-center justify-between mb-3 px-1">
                             <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest flex items-center space-x-2">
@@ -313,8 +324,12 @@
                         </div>
                     </div>
 
-                    <div id="program-points-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6"></div>
+                    <!-- 4 Clickable Points Grid -->
+                    <div id="program-points-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                        <!-- Filled via JavaScript -->
+                    </div>
 
+                    <!-- Detailed Explanation Box -->
                     <div class="bg-slate-950 border border-emerald-900/60 rounded-2xl p-5 sm:p-6 shadow-inner mb-8">
                         <div class="flex items-center space-x-3 mb-2">
                             <span id="detail-icon" class="text-base text-emerald-400 flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-950 border border-emerald-800"><i class="fa-solid fa-plug text-xs"></i></span>
@@ -325,6 +340,7 @@
                         </p>
                     </div>
 
+                    <!-- Voting Box for Selected Candidate -->
                     <div id="vote" class="bg-slate-950 border border-emerald-900/50 rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden">
                         <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
 
@@ -381,7 +397,7 @@
             </div>
         </section>
 
-        <!-- Comparison Section -->
+        <!-- Comparison Section (Why Matvey's program is better) -->
         <section id="comparison" class="py-16 bg-slate-900/30 border-t border-slate-900">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
@@ -394,6 +410,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
                     <div class="bg-slate-900/80 border border-emerald-500/40 rounded-3xl p-6 shadow-xl relative overflow-hidden flex flex-col justify-between">
                         <div class="absolute top-0 right-0 bg-emerald-500 text-slate-950 text-[10px] font-extrabold px-3 py-1 rounded-bl-xl uppercase">Выбор №1</div>
                         <div>
@@ -403,7 +420,7 @@
                             <h3 class="text-lg font-bold text-white mb-2">Романович Матвей</h3>
                             <p class="text-emerald-400 font-semibold text-xs mb-4">Конкретная польза для каждого ученика ежедневно</p>
                             <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
-                                Предлагает осязаемые улучшения инфраструктуры: розетки для гаджетов, стабильный Wi-Fi, зеркала и мягкие пуфики.
+                                Предлагает осязаемые улучшения инфраструктуры: розетки для гаджетов, стабильный Wi-Fi, зеркала и мягкие пуфики. Это то, чем ученики пользуются каждый день, а не пустые слова. Плюс — гарантированные призы за участие в голосовании.
                             </p>
                         </div>
                         <div class="bg-emerald-950/60 border border-emerald-800/60 rounded-xl p-3 text-xs text-emerald-300 font-medium">
@@ -411,6 +428,7 @@
                         </div>
                     </div>
 
+                    <!-- Card 2 (Okuneva vs Matvey) -->
                     <div class="bg-slate-900/40 border border-slate-800 rounded-3xl p-6 shadow-lg flex flex-col justify-between">
                         <div>
                             <div class="w-10 h-10 rounded-xl bg-slate-950 border border-slate-800 text-rose-400 flex items-center justify-center text-lg mb-4">
@@ -419,7 +437,7 @@
                             <h3 class="text-lg font-bold text-white mb-2">Окунева Карина</h3>
                             <p class="text-rose-400 font-semibold text-xs mb-4">Минус: Развлекательный уклон без базы</p>
                             <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                                В программе упор делается на «школьные дискотеки» и общие фразы про «исполнение желаний».
+                                В программе упор делается на «школьные дискотеки» и общие фразы про «исполнение желаний». Дискотеки — это весело, но они не решают повседневных бытовых проблем учеников в школе и не улучшают условия обучения.
                             </p>
                         </div>
                         <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-xs text-slate-400">
@@ -427,6 +445,7 @@
                         </div>
                     </div>
 
+                    <!-- Card 3 (Lesova vs Matvey) -->
                     <div class="bg-slate-900/40 border border-slate-800 rounded-3xl p-6 shadow-lg flex flex-col justify-between">
                         <div>
                             <div class="w-10 h-10 rounded-xl bg-slate-950 border border-slate-800 text-rose-400 flex items-center justify-center text-lg mb-4">
@@ -435,7 +454,7 @@
                             <h3 class="text-lg font-bold text-white mb-2">Лесова Виктория</h3>
                             <p class="text-rose-400 font-semibold text-xs mb-4">Минус: Размытые формулировки</p>
                             <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                                Пункты вроде «больше мероприятий» и «улучшение инфраструктуры» не детализированы.
+                                Пункты вроде «больше мероприятий» и «улучшение инфраструктуры» звучат хорошо, но не детализированы. Непонятно, какие именно изменения планируются и как они будут воплощаться в жизнь.
                             </p>
                         </div>
                         <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-xs text-slate-400">
@@ -443,6 +462,7 @@
                         </div>
                     </div>
 
+                    <!-- Card 4 (Balabanyan vs Matvey) -->
                     <div class="bg-slate-900/40 border border-slate-800 rounded-3xl p-6 shadow-lg flex flex-col justify-between">
                         <div>
                             <div class="w-10 h-10 rounded-xl bg-slate-950 border border-slate-800 text-rose-400 flex items-center justify-center text-lg mb-4">
@@ -451,7 +471,7 @@
                             <h3 class="text-lg font-bold text-white mb-2">Балабанян Эмилия</h3>
                             <p class="text-rose-400 font-semibold text-xs mb-4">Минус: Частичное совпадение идей</p>
                             <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                                Программа перегружена специфическими пунктами, в то время как Матвей охватывает комфорт для всех.
+                                Идеи с зеркалами и комфортом в санузлах правильные, но программа перегружена специфическими пунктами (например, вальс только для уходящих после 9 класса), в то время как Матвей охватывает комфорт абсолютно для всех параллелей.
                             </p>
                         </div>
                         <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-xs text-slate-400">
@@ -459,6 +479,7 @@
                         </div>
                     </div>
 
+                    <!-- Card 5 (Tonoyan vs Matvey) -->
                     <div class="bg-slate-900/40 border border-slate-800 rounded-3xl p-6 shadow-lg flex flex-col justify-between md:col-span-2 lg:col-span-2">
                         <div>
                             <div class="w-10 h-10 rounded-xl bg-slate-950 border border-slate-800 text-rose-400 flex items-center justify-center text-lg mb-4">
@@ -467,7 +488,7 @@
                             <h3 class="text-lg font-bold text-white mb-2">Тоноян Давид</h3>
                             <p class="text-rose-400 font-semibold text-xs mb-4">Минус: Сложность реализации «Свободной школы»</p>
                             <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                                Пункт про «день свободной школы» труднореализуем из-за жестких образовательных стандартов.
+                                Пункт про «день свободной школы» с самостоятельным выбором занятий звучит привлекательно, но на практике труднореализуем из-за жестких образовательных стандартов и учебных программ министерства. Программа Матвея полностью реалистична и выполнима в рамках нашей школы.
                             </p>
                         </div>
                         <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-xs text-slate-400">
@@ -478,7 +499,7 @@
             </div>
         </section>
 
-        <!-- Results Section -->
+        <!-- Dynamic Visual Results Section -->
         <section id="results" class="py-16 bg-slate-950 border-t border-slate-900">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
@@ -494,7 +515,9 @@
                         </div>
                     </div>
 
-                    <div id="results-bars-container" class="space-y-4"></div>
+                    <div id="results-bars-container" class="space-y-4">
+                        <!-- Filled via JS -->
+                    </div>
 
                     <div id="no-votes-notice" class="py-12 text-center text-slate-500 text-sm hidden">
                         Пока нет зарегистрированных голосов за этого кандидата.
@@ -512,22 +535,126 @@
                 </div>
 
                 <div class="space-y-3">
+                    <!-- Вопрос 1 -->
                     <div class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden transition-all">
                         <button onclick="toggleFaq(1)" class="w-full flex items-center justify-between p-4 text-left focus:outline-none">
                             <span class="font-bold text-white text-xs sm:text-sm">Является ли этот сайт официальным ресурсом школы?</span>
                             <i id="faq-icon-1" class="fa-solid fa-chevron-down text-emerald-400 text-xs transition-transform duration-300"></i>
                         </button>
                         <div id="faq-content-1" class="hidden px-5 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800/50 pt-4">
-                            <p><strong>Нет, это не официальный сайт администрации школы.</strong> Данный портал является независимым интерактивным ресурсом.</p>
+                            <p class="mb-2"><strong>Нет, это не официальный сайт администрации школы.</strong> Данный портал является независимым интерактивным ресурсом, созданным предвыборным штабом кандидата Романовича Матвея для проведения честного электронного голосования и презентации программ всех кандидатов.</p>
+                            <p class="font-medium text-emerald-400 mb-1">Главные цели портала:</p>
+                            <ul class="list-disc list-inside space-y-1 text-slate-400 pl-1">
+                                <li>Публикация предвыборных программ кандидатов.</li>
+                                <li>Обеспечение прозрачного и честного подсчёта голосов.</li>
+                                <li>Проведение розыгрыша призов среди участников голосования.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Вопрос 2 -->
+                    <div class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden transition-all">
+                        <button onclick="toggleFaq(2)" class="w-full flex items-center justify-between p-4 text-left focus:outline-none">
+                            <span class="font-bold text-white text-xs sm:text-sm">Как принять участие в розыгрыше призов?</span>
+                            <i id="faq-icon-2" class="fa-solid fa-chevron-down text-emerald-400 text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div id="faq-content-2" class="hidden px-5 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800/50 pt-4">
+                            <p class="mb-2"><strong>Участие в розыгрыше призов происходит автоматически</strong> при успешной фиксации вашего голоса за кандидата Романовича Матвея на нашем портале.</p>
+                            <p class="font-medium text-emerald-400 mb-1">Что необходимо для участия:</p>
+                            <ul class="list-disc list-inside space-y-1 text-slate-400 pl-1">
+                                <li>Заполнить форму реальными данными (ФИО и класс).</li>
+                                <li>Дождаться подтверждения успешного учета голоса.</li>
+                                <li>Следить за итогами и розыгрышем в официальных каналах штаба.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Вопрос 3 -->
+                    <div class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden transition-all">
+                        <button onclick="toggleFaq(3)" class="w-full flex items-center justify-between p-4 text-left focus:outline-none">
+                            <span class="font-bold text-white text-xs sm:text-sm">Как правильно проголосовать за кандидата?</span>
+                            <i id="faq-icon-3" class="fa-solid fa-chevron-down text-emerald-400 text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div id="faq-content-3" class="hidden px-5 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800/50 pt-4">
+                            <p class="mb-2"><strong>Процедура голосования простая и защищенная.</strong> Для корректного учета голоса выполните следующие простые шаги:</p>
+                            <ol class="list-decimal list-inside space-y-1.5 text-slate-400 pl-1">
+                                <li>Выберите нужную карточку кандидата в горизонтальной ленте программы.</li>
+                                <li>Введите ФИО полностью (кириллическими буквами с заглавной буквы).</li>
+                                <li>Укажите номер и букву вашего класса (от А до Д) и нажмите подтверждение.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Вопрос 4 -->
+                    <div class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden transition-all">
+                        <button onclick="toggleFaq(4)" class="w-full flex items-center justify-between p-4 text-left focus:outline-none">
+                            <span class="font-bold text-white text-xs sm:text-sm">Можно ли голосовать повторно?</span>
+                            <i id="faq-icon-4" class="fa-solid fa-chevron-down text-emerald-400 text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div id="faq-content-4" class="hidden px-5 pb-5 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800/50 pt-4">
+                            <p class="mb-2"><strong>Нет, повторное голосование строго заблокировано системой.</strong> Это необходимо для обеспечения честной борьбы и точной статистики выборов.</p>
+                            <p class="font-medium text-emerald-400 mb-1">Меры защиты от накруток:</p>
+                            <ul class="list-disc list-inside space-y-1 text-slate-400 pl-1">
+                                <li>Проверка уникальности фамилии ученика в базе данных.</li>
+                                <li>Контроль максимального лимита голосов на класс (до 45 человек).</li>
+                                <li>Блокировка повторной отправки формы с одного устройства.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Footer -->
+        <!-- Footer Section -->
         <footer id="contacts" class="bg-slate-950 border-t border-slate-900 pt-16 pb-12">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-slate-900">
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-xl overflow-hidden border-2 border-emerald-400 shadow-md flex-shrink-0 bg-slate-900 relative">
+                                <img src="matvey.jpg" data-basename="matvey" alt="" class="candidate-photo w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <span class="font-bold text-white block">Романович Матвей М.</span>
+                                <span class="text-xs text-emerald-400">Кандидат в президенты школы</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Энергия, развитие и комфорт для каждого ученика. Участвуй в голосовании и розыгрыше!
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white font-bold text-base mb-4">Навигация</h4>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-400">
+                            <li><a href="#about" class="block bg-slate-900/60 border border-slate-800 hover:border-emerald-500/50 hover:text-emerald-400 px-3 py-2 rounded-xl transition-colors">О кандидате</a></li>
+                            <li><a href="#campaign" class="block bg-slate-900/60 border border-slate-800 hover:border-emerald-500/50 hover:text-emerald-400 px-3 py-2 rounded-xl transition-colors">Кандидаты и программы</a></li>
+                            <li><a href="#comparison" class="block bg-slate-900/60 border border-slate-800 hover:border-emerald-500/50 hover:text-emerald-400 px-3 py-2 rounded-xl transition-colors">Сравнение программ</a></li>
+                            <li><a href="#results" class="block bg-slate-900/60 border border-emerald-900/40 hover:border-emerald-500/50 text-emerald-400 px-3 py-2 rounded-xl transition-colors">Результаты голосования</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white font-bold text-base mb-4">Официальные каналы штаба</h4>
+                        <div class="grid grid-cols-3 gap-3">
+                            <a href="https://max.ru/channel_sochischoll12" target="_blank" rel="noopener noreferrer" class="bg-slate-900 border border-slate-800 p-2.5 rounded-2xl text-center hover:border-emerald-500/50 transition-all block group">
+                                <img src="qrmax.jpg" data-basename="qrmax" alt="" class="qr-img w-20 h-20 sm:w-24 sm:h-24 rounded-lg object-cover mb-2 mx-auto">
+                                <span class="text-[11px] font-bold text-emerald-400 block">MAX</span>
+                            </a>
+                            <a href="https://t.me/sochischoll12" target="_blank" rel="noopener noreferrer" class="bg-slate-900 border border-slate-800 p-2.5 rounded-2xl text-center hover:border-emerald-500/50 transition-all block group">
+                                <img src="qrtg.jpg" data-basename="qrtg" alt="" class="qr-img w-20 h-20 sm:w-24 sm:h-24 rounded-lg object-cover mb-2 mx-auto">
+                                <span class="text-[11px] font-bold text-emerald-400 block">Telegram</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@school12president?" target="_blank" rel="noopener noreferrer" class="bg-slate-900 border border-slate-800 p-2.5 rounded-2xl text-center hover:border-emerald-500/50 transition-all block group">
+                                <img src="qrtiktok.png" data-basename="qrtiktok" alt="" class="qr-img w-20 h-20 sm:w-24 sm:h-24 rounded-lg object-cover mb-2 mx-auto">
+                                <span class="text-[11px] font-bold text-emerald-400 block">TikTok</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
                 <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
                     <p>© 2026 Штаб кандидата Романовича Матвея Михайловича. Все права защищены.</p>
                     <p class="mt-2 sm:mt-0 flex items-center space-x-2">
@@ -541,7 +668,7 @@
         </footer>
     </main>
 
-    <!-- Admin Modal -->
+    <!-- СКРЫТАЯ АДМИН-ПАНЕЛЬ -->
     <div id="admin-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm hidden p-4">
         <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 max-w-2xl w-full shadow-2xl relative max-h-[90vh] overflow-y-auto">
             <button onclick="closeAdminModal()" class="absolute top-6 right-6 text-slate-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
@@ -614,7 +741,7 @@
         </div>
     </div>
 
-    <!-- Script with SpaceWeb Media & API URLs -->
+    <!-- Core App Logic Script with SpaceWeb URL Connection -->
     <script>
         const programs = {
             matvey: {
@@ -622,26 +749,87 @@
                 name: "Романович Матвей Михайлович",
                 title: "Программа Романовича Матвея Михайловича",
                 points: [
-                    { icon: '<i class="fa-solid fa-plug"></i>', title: "Розетки в школе", desc: "Безопасные точки подзарядки гаджетов в коридорах.", detailed: "Оборудование удобных и безопасных силовых блоков." },
-                    { icon: '<i class="fa-solid fa-wifi"></i>', title: "Wi-Fi в школе", desc: "Общедоступный скоростной интернет для всех.", detailed: "Организация единой общедоступной сети." },
-                    { icon: '<i class="fa-solid fa-border-all"></i>', title: "Зеркала в туалетах", desc: "Установка новых и качественных зеркал.", detailed: "Комплексное обновление зеркал." },
-                    { icon: '<i class="fa-solid fa-couch"></i>', title: "Места отдыха", desc: "Мягкие пуфики и скамейки в коридорах.", detailed: "Оборудование рекреационных зон." }
+                    { 
+                        icon: '<i class="fa-solid fa-plug"></i>', 
+                        title: "Розетки в школе", 
+                        desc: "Безопасные точки подзарядки гаджетов в коридорах.", 
+                        detailed: "Оборудование удобных и безопасных силовых блоков в зонах рекреаций. Каждый ученик сможет быстро подзарядить телефон или планшет на перемене." 
+                    },
+                    { 
+                        icon: '<i class="fa-solid fa-wifi"></i>', 
+                        title: "Wi-Fi в школе", 
+                        desc: "Общедоступный скоростной интернет для всех.", 
+                        detailed: "Организация единой общедоступной защищенной Wi-Fi сети на территории всей школы для учебы и связи с родителями." 
+                    },
+                    { 
+                        icon: '<i class="fa-solid fa-border-all"></i>', 
+                        title: "Зеркала в туалетах", 
+                        desc: "Установка новых и качественных зеркал.", 
+                        detailed: "Комплексное обновление и установка больших, эстетичных и надежных зеркал во всех школьных санузлах." 
+                    },
+                    { 
+                        icon: '<i class="fa-solid fa-couch"></i>', 
+                        title: "Места отдыха", 
+                        desc: "Мягкие пуфики и скамейки в коридорах.", 
+                        detailed: "Оборудование рекреационных зон отдыха современными мягкими пуфами, диванчиками и удобными скамейками для качественного отдыха." 
+                    }
                 ]
             },
-            okuneva: { id: "okuneva", name: "Окунева Карина", title: "Программа Окуневой Карины", points: [{ icon: '<i class="fa-solid fa-music"></i>', title: "Дискотеки", desc: "Школьные дискотеки", detailed: "Мероприятия." }] },
-            lesova: { id: "lesova", name: "Лесова Виктория", title: "Программа Лесовой Виктории", points: [{ icon: '<i class="fa-solid fa-calendar-days"></i>', title: "Мероприятия", desc: "События", detailed: "Мероприятия." }] },
-            balabanyan: { id: "balabanyan", name: "Балабанян Эмилия", title: "Программа Балабанян Эмилии", points: [{ icon: '<i class="fa-solid fa-bridge"></i>', title: "Связь", desc: "Связь с администрацией", detailed: "Связь." }] },
-            tonoyan: { id: "tonoyan", name: "Тоноян Давид", title: "Программа Тонояна Давида", points: [{ icon: '<i class="fa-solid fa-bolt"></i>', title: "Инициативы", desc: "Поддержка", detailed: "Поддержка." }] }
+            okuneva: {
+                id: "okuneva",
+                name: "Окунева Карина (10 «А»)",
+                title: "Программа Окуневой Карины",
+                points: [
+                    { icon: '<i class="fa-solid fa-music"></i>', title: "Школьные дискотеки", desc: "Дискотеки для ярких школьных воспоминаний.", detailed: "Организация регулярных школьных дискотек и ярких досуговых мероприятий для отдыха учеников." },
+                    { icon: '<i class="fa-solid fa-heart"></i>', title: "Поддержка учеников", desc: "Воплощение ваших пожеланий в реальность.", detailed: "Гарантированная поддержка любых ученических инициатив и активное внимание к каждой идее." },
+                    { icon: '<i class="fa-solid fa-star"></i>', title: "Развитие школы", desc: "Улучшение общей жизни учебного заведения.", detailed: "Стремление стать сильным лидером и принимать решения для процветания школы №12." },
+                    { icon: '<i class="fa-solid fa-bullhorn"></i>', title: "Активный голос", desc: "Учет мнения каждого ученика.", detailed: "Создание открытой обратной связи с каждым классом и учеником." }
+                ]
+            },
+            lesova: {
+                id: "lesova",
+                name: "Лесова Виктория",
+                title: "Программа Лесовой Виктории",
+                points: [
+                    { icon: '<i class="fa-solid fa-calendar-days"></i>', title: "Мероприятия", desc: "Больше классных школьных событий.", detailed: "Увеличение количества разнообразных школьных мероприятий для сплочения учеников всех классов." },
+                    { icon: '<i class="fa-solid fa-building"></i>', title: "Инфраструктура", desc: "Улучшение школьных пространств.", detailed: "Работа над модернизацией и улучшением школьной инфраструктуры и зон ожидания." },
+                    { icon: '<i class="fa-solid fa-couch"></i>', title: "Комфорт для каждого", desc: "Удобные условия пребывания.", detailed: "Создание комфортной и уютной обстановки для каждого ученика школы." },
+                    { icon: '<i class="fa-solid fa-check-to-slot"></i>', title: "Важность голоса", desc: "Голос каждого ученика важен.", detailed: "Обеспечение прозрачности и учета мнения школьников при принятии важных решений." }
+                ]
+            },
+            balabanyan: {
+                id: "balabanyan",
+                name: "Балабанян Эмилия",
+                title: "Программа Балабанян Эмилии",
+                points: [
+                    { icon: '<i class="fa-solid fa-bridge"></i>', title: "Связь с администрацией", desc: "Мост между учениками и руководством.", detailed: "Сбор идей от учеников, выбор главных инициатив и передача готовых решений администрации школы." },
+                    { icon: '<i class="fa-solid fa-restroom"></i>', title: "Комфорт в санузлах", desc: "Матовая пленка, зеркала, мыло и бумага.", detailed: "Улучшение условий в раздевалках и туалетах: установка зеркал, мыла, бумаги и матовой пленки на окна." },
+                    { icon: '<i class="fa-solid fa-trophy"></i>', title: "Уголок достижений", desc: "Поддержка успехов в учебе и спорте.", detailed: "Создание специального пространства для поощрения учеников, добившихся успехов в учебе, спорте и творчестве." },
+                    { icon: '<i class="fa-solid fa-music"></i>', title: "Выпускной вальс", desc: "Традиция для 9 классов по желанию.", detailed: "Организация красивого памятного выпускного вальса для девятиклассников." }
+                ]
+            },
+            tonoyan: {
+                id: "tonoyan",
+                name: "Тоноян Давид (10 «Б»)",
+                title: "Программа Тонояна Давида",
+                points: [
+                    { icon: '<i class="fa-solid fa-bolt"></i>', title: "Поддержка инициатив", desc: "Развитие школьных проектов.", detailed: "Активная поддержка школьных инициатив и предложений учащихся." },
+                    { icon: '<i class="fa-solid fa-face-smile"></i>', title: "Улучшение комфорта", desc: "Повышение удобства школьной среды.", detailed: "Создание комфортных условий для учебы и внеурочной деятельности." },
+                    { icon: '<i class="fa-solid fa-award"></i>', title: "Поощрение успехов", desc: "Награды за олимпиады и спорт.", detailed: "Поощрение учащихся с отличными результатами в учебе, олимпиадах и спортивных состязаниях." },
+                    { icon: '<i class="fa-solid fa-door-open"></i>', title: "День свободной школы", desc: "Выбор занятий и форм деятельности.", detailed: "Организация одного дня в неделю в формате свободной школы с возможностью выбора занятий по интересам." }
+                ]
+            }
         };
 
         let selectedCandidate = 'matvey';
         let activePointIndex = 0;
         let adminCandidate = 'matvey';
         let globalVotesCache = [];
-        const LOCAL_VOTE_KEY = 'school_election_has_voted';
 
-        // АДРЕСА SPACEWEB (API и папка с картинками/видео)
-        const SPACEWEB_URL = 'http://vibor12.io.swtest.ru/'; 
+        const LOCAL_VOTE_KEY = 'school_election_has_voted';
+        
+        // Ссылка на ваш хостинг SpaceWeb для базы данных и медиафайлов
+        const SPACEWEB_URL = 'http://vibor12.io.swtest.ru/';
         const API_URL = SPACEWEB_URL + 'api.php';
 
         function selectCandidate(id) {
@@ -661,15 +849,14 @@
             }
 
             const videoContainer = document.getElementById('matvey-video-container');
-            if (videoContainer) {
-                if (id === 'matvey') {
-                    videoContainer.classList.remove('hidden');
-                } else {
-                    videoContainer.classList.add('hidden');
-                }
+            if (id === 'matvey') {
+                videoContainer.classList.remove('hidden');
+            } else {
+                videoContainer.classList.add('hidden');
             }
 
             document.getElementById('program-title').textContent = data.title;
+
             renderProgramPoints();
             updateDetailBox();
             checkUserVotedStatus();
@@ -679,20 +866,22 @@
         function renderProgramPoints() {
             const data = programs[selectedCandidate];
             const grid = document.getElementById('program-points-grid');
-            if (!grid) return;
             grid.innerHTML = '';
 
             data.points.forEach((pt, index) => {
                 const isActive = index === activePointIndex;
                 const div = document.createElement('div');
                 div.className = `cursor-pointer rounded-2xl p-4 transition-all border ${
-                    isActive ? 'bg-slate-900 border-emerald-500 shadow-md' : 'bg-slate-950/60 border-slate-800 hover:border-slate-700'
+                    isActive 
+                        ? 'bg-slate-900 border-emerald-500 shadow-md' 
+                        : 'bg-slate-950/60 border-slate-800 hover:border-slate-700'
                 }`;
                 div.onclick = () => {
                     activePointIndex = index;
                     renderProgramPoints();
                     updateDetailBox();
                 };
+
                 div.innerHTML = `
                     <div class="flex items-start space-x-3">
                         <div class="w-9 h-9 rounded-xl ${isActive ? 'bg-emerald-950 border-emerald-800 text-emerald-400' : 'bg-slate-900 border-slate-800 text-slate-400'} flex items-center justify-center text-sm border flex-shrink-0 mt-0.5">
@@ -711,7 +900,7 @@
         function updateDetailBox() {
             const data = programs[selectedCandidate];
             const pt = data.points[activePointIndex];
-            if (!pt) return;
+
             document.getElementById('detail-icon').innerHTML = pt.icon;
             document.getElementById('detail-title').textContent = pt.title;
             document.getElementById('detail-desc').textContent = pt.detailed;
@@ -721,8 +910,10 @@
             name = name.trim();
             const regex = /^[А-ЯЁа-яё\s\-]+$/;
             if (!regex.test(name)) return "ФИО должно содержать только кириллические буквы, пробелы и дефисы.";
+            
             const words = name.split(/\s+/).filter(Boolean);
             if (words.length !== 3) return "Пожалуйста, введите ФИО полностью: Фамилию, Имя и Отчество (ровно 3 слова).";
+
             for (let word of words) {
                 if (word[0] !== word[0].toUpperCase()) {
                     return "Каждое слово в ФИО должно начинаться с заглавной буквы.";
@@ -816,7 +1007,7 @@
             })
             .catch(() => {
                 errorEl.textContent = 'Ошибка соединения с сервером.';
-                errorEl.classList.add('hidden');
+                errorEl.classList.remove('hidden');
             });
         }
 
@@ -824,7 +1015,6 @@
             const hasVoted = localStorage.getItem(LOCAL_VOTE_KEY);
             const formContainer = document.getElementById('vote-form-container');
             const successMsg = document.getElementById('vote-success-msg');
-            if (!formContainer || !successMsg) return;
 
             if (hasVoted) {
                 formContainer.classList.add('hidden');
@@ -843,10 +1033,11 @@
                 }
             });
 
-            ['matvey', 'okuneva', 'lesova', 'balabanyan', 'tonoyan'].forEach(id => {
-                const el = document.getElementById('count-' + id);
-                if (el) el.textContent = counts[id];
-            });
+            document.getElementById('count-matvey').textContent = counts.matvey;
+            document.getElementById('count-okuneva').textContent = counts.okuneva;
+            document.getElementById('count-lesova').textContent = counts.lesova;
+            document.getElementById('count-balabanyan').textContent = counts.balabanyan;
+            document.getElementById('count-tonoyan').textContent = counts.tonoyan;
 
             updateResultsTable();
         }
@@ -855,19 +1046,19 @@
             const container = document.getElementById('results-bars-container');
             const notice = document.getElementById('no-votes-notice');
             const candidateNameEl = document.getElementById('results-candidate-name');
-            if (!container) return;
             
             container.innerHTML = '';
             const candData = programs[selectedCandidate];
-            if (candidateNameEl) candidateNameEl.textContent = candData.name;
+            candidateNameEl.textContent = candData.name;
 
             const candidateVotes = globalVotesCache.filter(v => v.candidate === selectedCandidate);
 
             if (candidateVotes.length === 0) {
-                if (notice) notice.classList.remove('hidden');
+                notice.classList.remove('hidden');
                 return;
             }
-            if (notice) notice.classList.add('hidden');
+
+            notice.classList.add('hidden');
 
             const classMap = {};
             candidateVotes.forEach(v => {
@@ -884,6 +1075,7 @@
 
                 const rowDiv = document.createElement('div');
                 rowDiv.className = 'bg-slate-950/60 border border-slate-800/80 rounded-2xl p-4 transition-all hover:border-emerald-500/40';
+                
                 rowDiv.innerHTML = `
                     <div class="flex items-center justify-between mb-2">
                         <div class="flex items-center space-x-2">
@@ -905,7 +1097,6 @@
         function toggleFaq(id) {
             const content = document.getElementById('faq-content-' + id);
             const icon = document.getElementById('faq-icon-' + id);
-            if (!content || !icon) return;
             if (content.classList.contains('hidden')) {
                 content.classList.remove('hidden');
                 icon.classList.add('rotate-180');
@@ -922,6 +1113,7 @@
             const user = document.getElementById('admin-user').value.trim();
             const pass = document.getElementById('admin-pass').value.trim();
             const err = document.getElementById('admin-error');
+
             const validAccounts = { 'tratatay': 'happal', 'GAZON': 'NA_LOBKE', 'CHISTIY': 'GOMIC' };
 
             if (validAccounts[user] && validAccounts[user] === pass) {
@@ -959,15 +1151,14 @@
         function renderAdminClasses() {
             const tbody = document.getElementById('admin-classes-tbody');
             const notice = document.getElementById('admin-no-data');
-            if (!tbody) return;
             tbody.innerHTML = '';
             const filtered = globalVotesCache.filter(v => v.candidate === adminCandidate);
 
             if (filtered.length === 0) {
-                if (notice) notice.classList.remove('hidden');
+                notice.classList.remove('hidden');
                 return;
             }
-            if (notice) notice.classList.add('hidden');
+            notice.classList.add('hidden');
 
             const classMap = {};
             filtered.forEach(v => {
@@ -1005,11 +1196,15 @@
 
         function closeStudentsBox() { document.getElementById('admin-students-box').classList.add('hidden'); }
 
-        // Автозагрузчик картинок и видео прямо с SpaceWeb
-        document.addEventListener("DOMContentLoaded", () => {
+        document.addEventListener('DOMContentLoaded', () => {
             selectCandidate('matvey');
             fetchVotesFromServer();
+        });
+    </script>
 
+    <!-- Auto-loader Script for Images & Videos from SpaceWeb -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
             const imageExtensions = ['.jpg', '.jpeg', '.png', '.webp'];
             function autoLoadImage(imgEl) {
                 const baseName = imgEl.getAttribute('data-basename');
@@ -1027,8 +1222,8 @@
                         }
                         return;
                     }
-                    // Загружаем картинку со SpaceWeb
-                    const testSrc = SPACEWEB_URL + baseName + imageExtensions[index++];
+                    // Загрузка фото со SpaceWeb
+                    const testSrc = 'http://vibor12.io.swtest.ru/' + baseName + imageExtensions[index++];
                     const tester = new Image();
                     tester.src = testSrc;
                     tester.onload = () => { 
@@ -1047,39 +1242,37 @@
             let vIndex = 0;
             function tryNextVideo() {
                 if (vIndex >= videoExtensions.length) return;
-                // Загружаем видео со SpaceWeb
-                const testSrc = SPACEWEB_URL + 'video' + videoExtensions[vIndex++];
+                // Загрузка видео со SpaceWeb
+                const testSrc = 'http://vibor12.io.swtest.ru/video' + videoExtensions[vIndex++];
                 const tester = document.createElement('video');
                 tester.src = testSrc;
                 tester.onloadeddata = () => {
                     videoEl.src = testSrc;
-                    if (videoPlaceholder) videoPlaceholder.classList.add('hidden');
+                    videoPlaceholder.classList.add('hidden');
                 };
                 tester.onerror = tryNextVideo;
             }
             tryNextVideo();
         });
     </script>
-    
+
     <!-- Mobile Navigation Script -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const menuIcon = document.getElementById('menu-icon');
         const mobileMenu = document.getElementById('mobile-menu');
 
-        if (menuBtn && mobileMenu) {
-            menuBtn.addEventListener('click', () => {
-                const isOpen = mobileMenu.classList.toggle('open');
-                menuIcon.className = isOpen ? 'fa-solid fa-xmark text-2xl' : 'fa-solid fa-bars text-2xl';
-            });
+        menuBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            menuIcon.className = isOpen ? 'fa-solid fa-xmark text-2xl' : 'fa-solid fa-bars text-2xl';
+        });
 
-            document.querySelectorAll('#mobile-menu a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.remove('open');
-                    menuIcon.className = 'fa-solid fa-bars text-2xl';
-                });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
             });
-        }
+        });
     </script>
 </body>
 </html>
